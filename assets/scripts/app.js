@@ -34,6 +34,9 @@ const Portfolio = function() {
 			}, {
 			text: "Hyperledger Fabric",
 			weight: 11
+			},{
+			text: "Node.js",
+			weight: 12
 			}
 		];
 		return words;

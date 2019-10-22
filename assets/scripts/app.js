@@ -36,6 +36,12 @@ const Portfolio = function() {
 			weight: 11
 			},{
 			text: "Node.js",
+			weight: 13
+			},{
+			text: "AWS",
+			weight: 11
+			},{
+			text: "Cloud Computing",
 			weight: 12
 			}
 		];

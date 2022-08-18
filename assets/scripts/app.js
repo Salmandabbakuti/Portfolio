@@ -6,13 +6,13 @@ const Portfolio = function () {
         weight: 9
       }, {
         text: "Web3",
-        weight: 8
+        weight: 13
       }, {
         text: "Solidity",
-        weight: 9
+        weight: 13
       }, {
         text: "JavaScript",
-        weight: 8
+        weight: 10
       }, {
         text: "programming",
         weight: 9
@@ -50,7 +50,7 @@ const Portfolio = function () {
       },
       {
         text: "Ledger Databases",
-        weight: 8
+        weight: 10
       },
       {
         text: "Serverless",
@@ -62,24 +62,52 @@ const Portfolio = function () {
       },
       {
         text: "Amplify",
+        weight: 10
+      },
+      {
+        text: "TheGraph",
+        weight: 13
+      },
+      {
+        text: "Prisma",
+        weight: 13
+      },
+      {
+        text: "React",
+        weight: 13
+      },
+      {
+        text: "Subgraphs",
         weight: 13
       },
       {
         text: "Blockchain",
-        weight: 10
+        weight: 13
       },
       {
         text: "Power BI",
-        weight: 13
+        weight: 10
       },
       {
         text: "CanvasJs",
-        weight: 13
+        weight: 10
       },
       {
         text: "BaaS",
         weight: 13
       },
+      {
+        text: "MongoDB",
+        weight: 8
+      },
+      {
+        text: "MySQL",
+        weight: 8
+      },
+      {
+        text: "Postgres",
+        weight: 8
+      }
     ];
     return words;
   }
@@ -108,7 +136,7 @@ const Portfolio = function () {
   function typeAnimation() {
     Typed.new("#writing-text", {
       strings: [
-        "I am Blockchain Developer.", "love everything about code.", "Fascinated to program things that work in real world and useful for people in their businesses."
+        "I am Web and Blockchain Developer.", "Love everything about code.", "Fascinated to program things that work in real world and useful for people in their businesses."
       ],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
@@ -126,7 +154,7 @@ const Portfolio = function () {
   return {
     displayWordCloud: displayWordCloud,
     typeAnimation: typeAnimation
-  }
+  };
 
 }();
 

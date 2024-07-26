@@ -117,7 +117,7 @@ const Portfolio = function () {
   }
 
   function displayWordCloud() {
-    const count = 1;
+    let count = 1;
     $(window).on('scroll', function () {
       const y_scroll_pos = window.pageYOffset;
       const scroll_pos_test = 2700; // set to whatever you want it to be

@@ -1,46 +1,59 @@
-const Portfolio = function () {
+const Portfolio = (function () {
   function makeWords() {
     const words = [
       {
         text: "Smartcontracts",
         weight: 9
-      }, {
+      },
+      {
         text: "Web3",
         weight: 13
-      }, {
+      },
+      {
         text: "Solidity",
         weight: 13
-      }, {
+      },
+      {
         text: "JavaScript",
         weight: 10
-      }, {
+      },
+      {
         text: "programming",
         weight: 9
-      }, {
+      },
+      {
         text: "python",
         weight: 8
-      }, {
+      },
+      {
         text: "Chaincode",
         weight: 9
-      }, {
+      },
+      {
         text: "Dapps",
         weight: 10
-      }, {
+      },
+      {
         text: "decentralized",
         weight: 9
-      }, {
+      },
+      {
         text: "Ethereum",
         weight: 12
-      }, {
+      },
+      {
         text: "Hyperledger Fabric",
         weight: 11
-      }, {
+      },
+      {
         text: "Node.js",
         weight: 13
-      }, {
+      },
+      {
         text: "AWS",
         weight: 11
-      }, {
+      },
+      {
         text: "Cloud Computing",
         weight: 12
       },
@@ -113,12 +126,12 @@ const Portfolio = function () {
   }
 
   function makeWordCloud(words) {
-    $('.teaching-domains').jQCloud(words, { delay: 120 });
+    $(".teaching-domains").jQCloud(words, { delay: 120 });
   }
 
   function displayWordCloud() {
     let count = 1;
-    $(window).on('scroll', function () {
+    $(window).on("scroll", function () {
       const y_scroll_pos = window.pageYOffset;
       const scroll_pos_test = 2700; // set to whatever you want it to be
       const words = makeWords();
@@ -129,25 +142,26 @@ const Portfolio = function () {
     });
   }
 
-  function designForm() {
-    $("#my-modal form").addClass("my-form");
-  }
-
   function typeAnimation() {
     Typed.new("#writing-text", {
       strings: [
-        "I am Web and Blockchain Developer.", "Love everything about code.", "Fascinated to program things that work in real world and useful for people in their businesses."
+        "I am Web and Blockchain Developer.",
+        "Love everything about code.",
+        "Fascinated to program things that work in real world and useful for people in their businesses."
       ],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
       typeSpeed: 3,
-      contentType: 'text',
+      contentType: "text",
       callback: function () {
-        $("#writing-text").css({ "color": "#fff", "background-color": "#C8412B" });
+        $("#writing-text").css({
+          color: "#fff",
+          "background-color": "#C8412B"
+        });
       },
-      preStringTyped: function () { },
-      onStringTyped: function () { }
+      preStringTyped: function () {},
+      onStringTyped: function () {}
     });
   }
 
@@ -155,9 +169,7 @@ const Portfolio = function () {
     displayWordCloud: displayWordCloud,
     typeAnimation: typeAnimation
   };
-
-}();
-
+})();
 
 Portfolio.displayWordCloud();
 Portfolio.typeAnimation();
